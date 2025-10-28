@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana2.MAUI.Views.LoginPage"
+             Title="Login: Semana 3"
+             BackgroundColor="#F5F6FA">
+
+    <Grid Padding="24" RowDefinitions="Auto,*,Auto">
+        <Label Text="Login: Semana 3"
+               FontSize="22"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="0,8,0,24"/>
+
+        <VerticalStackLayout Spacing="14" Grid.Row="1">
+
+            <Entry x:Name="txtUsuario"
+       Placeholder="Ingresa el usuario"
+       TextColor="Black"
+       PlaceholderColor="#6B7280" />
+
+            <Entry x:Name="txtPassword"
+       Placeholder="Ingresa la contraseña"
+       IsPassword="True"
+       TextColor="Black"
+       PlaceholderColor="#6B7280" />
+
+
+            <Button Text="Ingresar"
+                    BackgroundColor="#B39DDB"
+                    Clicked="BtnIngresar_Clicked"/>
+
+            <Button Text="Limpiar"
+                    BackgroundColor="#B39DDB"
+                    Clicked="BtnLimpiar_Clicked"/>
+        </VerticalStackLayout>
+
+        <Label Grid.Row="2"
+               Text="Solo usuarios válidos: Carlos, Ana, Jose"
+               FontSize="12"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               Margin="0,24,0,0"/>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana2.MAUI.Views.Inicio"
+             Title="Sistema de Calificaciones UISRAEL">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <Label Text="Sistema de Calificaciones UISRAEL"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Seleccione Estudiante:"/>
+            <Picker x:Name="pickerEstudiantes" />
+
+            <Label Text="Seguimiento 1:"/>
+            <Entry x:Name="entrySeguimiento1" Keyboard="Numeric" Placeholder="0 a 10"/>
+
+            <Label Text="Examen 1:"/>
+            <Entry x:Name="entryExamen1" Keyboard="Numeric" Placeholder="0 a 10"/>
+
+            <Label Text="Seguimiento 2:"/>
+            <Entry x:Name="entrySeguimiento2" Keyboard="Numeric" Placeholder="0 a 10"/>
+
+            <Label Text="Examen 2:"/>
+            <Entry x:Name="entryExamen2" Keyboard="Numeric" Placeholder="0 a 10"/>
+
+            <Label Text="Seleccione Fecha:"/>
+            <DatePicker x:Name="datePickerFecha" />
+
+            <Button Text="Calcular Notas del Estudiante"
+                    BackgroundColor="#007ACC"
+                    TextColor="White"
+                    Clicked="CalcularNotas_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
